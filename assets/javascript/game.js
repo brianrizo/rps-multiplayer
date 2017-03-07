@@ -383,21 +383,17 @@ function rpsCompare() {
 	database.ref().child("/turn").set(1);
 }
 
-
-  // player 1 inputs name /
+  //***pseudocode***
+  // player 1 inputs name
   // waiting for player 2
   // player 2 inputs name
-  // firebase save names
-  // alert player 2 name to player 1 firebase call names
-  // alert player 1 name to player 2 firebase call names
-  // ready, go!
-  // provide three choices to click
-  // on player click, fill half split battle screen with that player's choice push choice to firebase under player's name
-  // on both clicks, populate both halves with images pull opponent from firebase
-  // on both clicks, animate winning picture covering losing picture increment and push win/lose/tie counter to firebase
-  // on timeout by one player, alert other player that they've won by timeout push win to firebase
-  // alert win/lose/tie to each player pull from firebase
-  // display as wins losses and ties at the top of the screen
-  // repeat from ready, go!
-  // on end game button, alert player that game end, push end game to firebase, alert other player that name has ended the game and reset both to name $('#name-input').val() screen
-  // .child.set()
+  // firebase save names and displays players are connected in text box
+  // once both player spots are filled
+  // game will begin - ready, go!
+  // provide three choices to click from (RPS)
+  // on player click, selection is saved in firebase and prompts player 2 to select option
+  // on player 2 click, outcome is displayed on whether game is won/loss/or tied
+  // save win/loss/tie to firebase and also display in html
+  // if either player disconnects from game/ other player will be alerted in the text box
+  // game will continue and prompt player one to make selection
+  // repeat until players decide to leave game
