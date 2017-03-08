@@ -37,7 +37,7 @@ var turn = 1;
 // Get a reference to the database service
 var database = firebase.database();
 
-// Attach a listener to the database /players/ node to listen for any changes
+// Attach a listener to the database /players/ listen for any changes
 database.ref("/players/").on("value", function(snapshot) {
 	// Check for existence of player 1 in the database
 	if (snapshot.child("player1").exists()) {
@@ -147,7 +147,7 @@ database.ref("/chat/").on("child_added", function(snapshot) {
 	$("#chatDisplay").scrollTop($("#chatDisplay")[0].scrollHeight);
 });
 
-// Attach a listener to the database /turn/ node to listen for any changes
+// Attach a listener to the database /turn/ listen for any changes
 database.ref("/turn/").on("value", function(snapshot) {
 	// Check if it's player1's turn
 	if (snapshot.val() === 1) {
