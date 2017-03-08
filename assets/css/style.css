@@ -20,6 +20,7 @@ body {
 .jumbotron h2 {
 	font-size: 2em;
     color: grey;
+    font-family: 'Marvel', sans-serif;
 }
 
 .formPanel {
@@ -78,6 +79,7 @@ body {
 	font-size: 2em;
 	color: red;
 	margin-top: 5px;
+	font-family: 'Cherry Cream Soda', cursive;
 }
 
 .playerPanel .panelOption {
@@ -87,6 +89,7 @@ body {
 	font-weight: bold;
 	font-size: 1.5em;
 	color: white;
+	font-family: 'orbitron';
 }
 
 .playerPanel .panelOption .option {
@@ -103,22 +106,24 @@ body {
 	height: 60px;
 	background-color: grey;
 	text-align: center;
-	font-weight: normal;
+	font-weight: bolder;
 	font-size: 1.5em;
 	color: black;
 	border-radius: 0px 0px 10px 10px;
+
 }
 
 .gamePanel {
 	height: 281px;
 	background-color: transparent;
-	border: 3px dashed red;
+	border: 3px dotted red;
 	border-radius: 10px;
 }
 
 .gamePanel h3 {
 	font-size: 2.5em;
 	color: white;
+	font-weight: bolder;
 	margin: 1.25em 0em 0em 0em;
 }
 
